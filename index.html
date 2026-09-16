@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface": "#1c1c1a", "surface-variant": "#e5e2e0", "on-background": "#1c1c1a", "on-tertiary": "#ffffff", "primary-container": "#ba3c18", "on-surface-variant": "#59413b", "secondary-fixed-dim": "#bac8d8", "surface-container": "#f0edeb", "surface": "#fcf9f6", "primary": "#982400", "tertiary-fixed-dim": "#d2c4b6", "primary-fixed-dim": "#ffb5a1", "tertiary": "#584e43", "on-error-container": "#93000a", "on-primary-fixed-variant": "#881f00", "primary-fixed": "#ffdbd1", "outline": "#8d7169", "on-secondary-container": "#576472", "inverse-primary": "#ffb5a1", "on-primary-container": "#ffe1da", "background": "#fcf9f6", "inverse-on-surface": "#f3f0ee", "on-tertiary-fixed-variant": "#4f453b", "on-tertiary-fixed": "#221a12", "inverse-surface": "#31302f", "tertiary-fixed": "#efe0d2", "error-container": "#ffdad6", "surface-container-low": "#f6f3f1", "on-tertiary-container": "#f5e5d7", "on-error": "#ffffff", "tertiary-container": "#71665b", "surface-tint": "#ad330f", "on-secondary": "#ffffff", "on-primary": "#ffffff", "surface-dim": "#dcd9d7", "secondary": "#53606d", "outline-variant": "#e1bfb7", "surface-container-highest": "#e5e2e0", "on-secondary-fixed": "#0f1d28", "secondary-fixed": "#d6e4f4", "surface-container-high": "#ebe8e5", "secondary-container": "#d3e1f1", "surface-container-lowest": "#ffffff", "surface-bright": "#fcf9f6", "on-secondary-fixed-variant": "#3b4855", "on-primary-fixed": "#3b0800", "error": "#ba1a1a" }, borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }, spacing: { "space-2xs": "0.25rem", "space-xl": "2.5rem", "space-sm": "0.75rem", "space-xs": "0.5rem", "mobile-margin": "1.25rem", "space-2xl": "4rem", "tablet-margin": "2rem", "space-md": "1rem", "column-gap": "1.5rem", "space-3xl": "6.5rem", "desktop-margin": "4rem", "space-lg": "1.5rem", "space-4xl": "10rem" }, fontFamily: { "headline-lg": ["Newsreader"], "display-mobile": ["Newsreader"], "display": ["Newsreader"], "headline-sm": ["Newsreader"], "headline-md": ["Newsreader"], "body-md": ["Space Grotesk"], "index-numeral": ["Space Grotesk"], "headline-xl-mobile": ["Newsreader"], "label-md": ["Space Grotesk"], "headline-xl": ["Newsreader"], "body-lg": ["Space Grotesk"], "body-sm": ["Space Grotesk"], "caption": ["Newsreader"], "headline-lg-mobile": ["Newsreader"] }, fontSize: { "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "400" }], "display-mobile": ["44px", { lineHeight: "50px", letterSpacing: "-0.02em", fontWeight: "400" }], "display": ["84px", { lineHeight: "92px", letterSpacing: "-0.03em", fontWeight: "400" }], "headline-sm": ["22px", { lineHeight: "30px", letterSpacing: "0em", fontWeight: "500" }], "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "400" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "index-numeral": ["12px", { lineHeight: "16px", letterSpacing: "0.08em", fontWeight: "600" }], "headline-xl-mobile": ["36px", { lineHeight: "42px", letterSpacing: "-0.015em", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "500" }], "headline-xl": ["56px", { lineHeight: "64px", letterSpacing: "-0.025em", fontWeight: "400" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "400" }], "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "400" }], "caption": ["13px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "400" }], "headline-lg-mobile": ["28px", { lineHeight: "34px", letterSpacing: "-0.01em", fontWeight: "400" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen relative selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-background/90 backdrop-blur-md"><div class="h-20 max-w-[1360px] mx-auto px-mobile-margin md:px-tablet-margin lg:px-desktop-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><a class="font-label-md text-label-md tracking-wider text-on-surface uppercase font-semibold" data-path="portfolio" href="#">M. Afzal</a><div class="hidden sm:inline-flex items-center gap-space-xs px-space-xs py-[2px] bg-surface-container border border-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span><span class="font-body-sm text-body-sm text-tertiary">Available for hire • Chennai</span></div></div><div class="flex items-center gap-space-lg"><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-medium"><a aria-current="page" class="group relative uppercase tracking-wider transition-colors py-1 text-primary font-medium" data-path="portfolio" href="#about">01 About<span class="absolute left-0 bottom-0 w-0 h-[1px] bg-primary transition-all duration-200 group-hover:w-full"></span></a><a aria-current="page" class="group relative uppercase tracking-wider transition-colors py-1 text-primary font-medium" data-path="portfolio" href="#skills">02 Skills<span class="absolute left-0 bottom-0 w-0 h-[1px] bg-primary transition-all duration-200 group-hover:w-full"></span></a><a aria-current="page" class="group relative uppercase tracking-wider transition-colors py-1 text-primary font-medium" data-path="portfolio" href="#works">03 Selected Works<span class="absolute left-0 bottom-0 w-0 h-[1px] bg-primary transition-all duration-200 group-hover:w-full"></span></a><a aria-current="page" class="group relative uppercase tracking-wider transition-colors py-1 text-primary font-medium" data-path="portfolio" href="#contact">04 Contact<span class="absolute left-0 bottom-0 w-0 h-[1px] bg-primary transition-all duration-200 group-hover:w-full"></span></a></nav><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- ========================================================================= -->
+<!-- HERO: MONOGRAPH COVER & INTRODUCTORY ESSAY -->
+<!-- ========================================================================= -->
+<section class="w-full relative px-mobile-margin md:px-tablet-margin lg:px-desktop-margin pt-8 md:pt-14 pb-20 md:pb-28">
+<div class="max-w-[1360px] mx-auto relative">
+<!-- Faint Architectural Watermark -->
+<div class="absolute right-0 top-0 select-none pointer-events-none opacity-[0.035] -z-10 tracking-tighter">
+<span class="font-headline-xl text-[140px] md:text-[240px] leading-none text-on-surface block font-serif italic">00/FL</span>
+</div>
+<!-- Overline Metadata Strip -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-y-3 gap-x-6 pb-6 border-b border-surface-variant text-tertiary">
+<div class="md:col-span-3 flex items-center gap-2">
+<span class="font-index-numeral text-index-numeral text-primary tracking-widest">[FOLIO 2026]</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface"></span>
+</div>
+<div class="md:col-span-5 font-body-sm text-body-sm text-tertiary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary">pin_drop</span>
+<span>Medavakkam, Chennai, TN, IN</span>
+</div>
+<div class="md:col-span-4 flex md:justify-end items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping inline-block"></span>
+<span class="font-label-md text-label-md tracking-wider uppercase text-on-surface">Open for Junior / Entry Roles</span>
+</div>
+</div>
+<!-- Main Typographic Headline Lockup -->
+<div class="pt-10 md:pt-16 pb-12 md:pb-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-8 items-baseline">
+<div class="lg:col-span-8">
+<h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface tracking-tight leading-[1.08]">
+              Mohammed Afzal<br/>
+<span class="font-headline-lg text-headline-lg-mobile md:text-headline-lg italic text-primary-container font-serif">
+                Full-Stack &amp; Mobile App Developer
+              </span>
+</h1>
+<p class="mt-8 font-body-lg text-body-lg text-tertiary max-w-2xl leading-relaxed">
+              Aspiring full-stack developer building cross-platform mobile apps with React Native and Flutter, and scalable web applications with the MERN stack. Currently interning at Texawave Innovations, delivering production features for a multi-module ERP system.
+            </p>
+</div>
+<!-- Academic & Mechanical Dossier (Right Col) -->
+<div class="lg:col-span-4 space-y-6 pt-4 lg:pt-0">
+<div class="p-6 bg-surface-container-low border border-surface-variant flex flex-col justify-between h-full">
+<div class="space-y-4">
+<div class="flex items-center justify-between border-b border-surface-variant pb-2">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-widest">Degree</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">B.Tech in Information Tech</span>
+</div>
+<div class="flex items-center justify-between border-b border-surface-variant pb-2">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-widest">Alma Mater</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Sathyabama Institute (SIST)</span>
+</div>
+<div class="flex items-center justify-between border-b border-surface-variant pb-2">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-widest">Focus Matrix</span>
+<span class="font-label-md text-label-md text-primary font-semibold">React Native • Flutter • MERN</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-widest">Availability </span>
+<span class="font-label-md text-label-md text-on-surface">Interning at Texawave Innovations</span>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-surface-variant flex items-center justify-between">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md uppercase tracking-wider text-primary font-medium hover:underline" href="#contact">
+                  Initiate Correspondence
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-index-numeral text-index-numeral text-tertiary">[ 2026 REF ]</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Metrics Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-0 border-t border-b border-surface-variant bg-surface-container-lowest">
+<div class="p-6 border-r border-surface-variant">
+<p class="font-label-md text-label-md text-tertiary uppercase tracking-wider">Mobile Stack</p>
+<p class="mt-2 font-headline-sm text-headline-sm text-on-surface">React Native &amp; Flutter</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Dart, GetX, Bloc, Provider</p>
+</div>
+<div class="p-6 md:border-r border-surface-variant">
+<p class="font-label-md text-label-md text-tertiary uppercase tracking-wider">Web Stack</p>
+<p class="mt-2 font-headline-sm text-headline-sm text-on-surface">MERN</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">MongoDB, Express, React, Node</p>
+</div>
+<div class="p-6 border-t md:border-t-0 border-r border-surface-variant">
+<p class="font-label-md text-label-md text-tertiary uppercase tracking-wider">Backend Bridge</p>
+<p class="mt-2 font-headline-sm text-headline-sm text-on-surface">Node &amp; Firebase</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">REST APIs / Auth / Firestore</p>
+</div>
+<div class="p-6 border-t md:border-t-0">
+<p class="font-label-md text-label-md text-tertiary uppercase tracking-wider">Current Role</p>
+<p class="mt-2 font-headline-sm text-headline-sm text-on-surface">Full-Stack Intern</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Texawave Innovations, since Jun 2026</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 01 — PERSPECTIVE & BACKGROUND (ABOUT) -->
+<!-- ========================================================================= -->
+<section class="w-full border-t border-surface-variant bg-surface-container-low px-mobile-margin md:px-tablet-margin lg:px-desktop-margin py-20 md:py-28" id="about">
+<div class="max-w-[1360px] mx-auto">
+<!-- Section Index Header -->
+<div class="flex items-baseline justify-between border-b border-surface-variant pb-4 mb-12 md:mb-16">
+<div class="flex items-center gap-3">
+<span class="font-index-numeral text-index-numeral text-primary tracking-widest">[ 01 ]</span>
+<h2 class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Perspective &amp; Background</h2>
+</div>
+<span class="font-label-md text-label-md text-tertiary tracking-wider uppercase hidden sm:inline">Context / Provenance</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-12">
+<!-- Left Editorial Commentary Column -->
+<div class="lg:col-span-5 space-y-8">
+<div>
+<span class="font-headline-sm text-headline-sm italic font-serif text-primary-container block mb-3">Origin &amp; Trajectory</span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight">
+              A full-stack instinct for shipping production-grade features.
+            </h3>
+</div>
+<!-- Pull Quote Lockup -->
+<div class="p-6 bg-surface-container border-l-2 border-primary-container">
+<blockquote class="font-headline-sm text-headline-sm italic text-on-surface font-serif leading-snug">
+              “Great products live at the intersection of a clean API contract and a UI that never makes the user wait.”
+            </blockquote>
+<p class="mt-4 font-label-md text-label-md uppercase tracking-wider text-tertiary">— Mohammed Afzal / Technical Ethos</p>
+</div>
+<!-- Historical Markers -->
+<div class="space-y-4 pt-4 border-t border-surface-variant">
+<div class="flex items-start gap-4">
+<span class="font-index-numeral text-index-numeral text-primary pt-0.5">2026—Now</span>
+<div>
+<p class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-medium">Full-Stack Developer Intern, Texawave Innovations</p>
+<p class="font-body-sm text-body-sm text-tertiary">Building and maintaining production features on the MERN stack for a multi-module custom ERP system, in a collaborative agile team.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="font-index-numeral text-index-numeral text-primary pt-0.5">2025</span>
+<div>
+<p class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-medium">Full-Stack Intern, Hackwit Technologies</p>
+<p class="font-body-sm text-body-sm text-tertiary">Built and maintained web features end-to-end, wrote and tested APIs connecting frontend to database, and designed a web interface from scratch.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="font-index-numeral text-index-numeral text-primary pt-0.5">B.Tech</span>
+<div>
+<p class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-medium">Information Technology, Sathyabama Institute of Science and Technology</p>
+<p class="font-body-sm text-body-sm text-tertiary">CGPA 7.21. Certified in Oracle Cloud Infrastructure Foundations, Data Visualization with R (IBM), and OOP OnRamp (MATLAB).</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Prose Narrative Column -->
+<div class="lg:col-span-7 space-y-6 font-body-lg text-body-lg text-tertiary leading-relaxed">
+<p class="text-on-surface font-normal first-letter:float-left first-letter:text-5xl first-letter:pr-4 first-letter:font-headline-xl first-letter:font-serif first-letter:text-primary-container">
+            Based in Chennai, I'm an aspiring full-stack developer with hands-on experience building cross-platform mobile apps in React Native and Flutter alongside responsive web applications and scalable backend systems. I care about clean architecture, RESTful API design, and state management that stays predictable as an app grows.
+          </p>
+<p>
+            I'm currently interning at <strong class="text-on-surface font-medium">Texawave Innovations</strong>, where I build and maintain production features on the MERN stack (MongoDB, Express.js, React.js, Node.js), write and test APIs connecting the frontend to the database, and take part in client requirement-gathering sessions for a real-time, multi-module custom ERP system.
+          </p>
+<p>
+            Earlier, at <strong class="text-on-surface font-medium">Hackwit Technologies</strong>, I built web features across the full stack — from designing the interface from scratch to wiring up and testing the APIs that kept data flowing correctly between frontend and database.
+          </p>
+<div class="pt-6 border-t border-surface-variant grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="p-5 bg-surface-container-lowest border border-surface-variant">
+<span class="material-symbols-outlined text-primary text-[24px]">architecture</span>
+<h4 class="mt-3 font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Clean Architecture</h4>
+<p class="mt-1 font-body-sm text-body-sm text-tertiary">Identifying reusable functions and logic patterns to cut duplication and keep modules maintainable across large codebases.</p>
+</div>
+<div class="p-5 bg-surface-container-lowest border border-surface-variant">
+<span class="material-symbols-outlined text-primary text-[24px]">speed</span>
+<h4 class="mt-3 font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">End-to-End Delivery</h4>
+<p class="mt-1 font-body-sm text-body-sm text-tertiary">From requirement-gathering with clients to shipping a solo React Native app to the Play Store.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 02 — TECHNICAL TOOLKIT (REPERTOIRE) -->
+<!-- ========================================================================= -->
+<section class="w-full border-t border-surface-variant bg-surface px-mobile-margin md:px-tablet-margin lg:px-desktop-margin py-20 md:py-28" id="skills">
+<div class="max-w-[1360px] mx-auto">
+<!-- Section Index Header -->
+<div class="flex items-baseline justify-between border-b border-surface-variant pb-4 mb-12">
+<div class="flex items-center gap-3">
+<span class="font-index-numeral text-index-numeral text-primary tracking-widest">[ 02 ]</span>
+<h2 class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Technical Repertoire</h2>
+</div>
+<span class="font-label-md text-label-md text-tertiary tracking-wider uppercase hidden sm:inline">Competency Matrix</span>
+</div>
+<div class="mb-10">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight max-w-2xl">
+          A full-stack toolchain across mobile and web.
+        </h3>
+<p class="font-body-md text-body-md text-tertiary mt-2">
+          Structured by domain responsibility. Hover any row to inspect concrete implementation notes.
+        </p>
+</div>
+<!-- Structured Architectural Data Rows -->
+<div class="border-t border-surface-variant divide-y divide-surface-variant text-on-surface">
+<!-- Row 1: Mobile UI & Engine -->
+<div class="group py-6 px-4 -mx-4 transition-colors duration-150 hover:bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="md:w-1/4 flex items-center gap-3">
+<span class="font-index-numeral text-index-numeral text-primary group-hover:translate-x-1 transition-transform">02.1</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold text-on-surface">Mobile Core</span>
+</div>
+<div class="md:w-1/2">
+<p class="font-headline-sm text-headline-sm text-on-surface">React Native, Flutter &amp; Dart</p>
+<p class="font-body-sm text-body-sm text-tertiary mt-1">Cross-platform Android apps, responsive UI design across breakpoints, and offline-first local storage.</p>
+</div>
+<div class="md:w-1/4 flex md:justify-end gap-2 flex-wrap">
+<span class="px-2.5 py-1 bg-surface-container text-tertiary text-label-md font-label-md uppercase tracking-wider border border-surface-variant">React Native</span>
+<span class="px-2.5 py-1 bg-surface-container text-tertiary text-label-md font-label-md uppercase tracking-wider border border-surface-variant">Flutter</span>
+<span class="px-2.5 py-1 bg-surface-container text-tertiary text-label-md font-label-md uppercase tracking-wider border border-surface-variant">Dart</span>
+</div>
+</div>
+<!-- Row 2: State Orchestration -->
+<div class="group py-6 px-4 -mx-4 transition-colors duration-150 hover:bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="md:w-1/4 flex items-center gap-3">
+<span class="font-index-numeral text-index-numeral text-primary group-hover:translate-x-1 transition-transform">02.2</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold text-on-surface">State Management</span>
+</div>
+<div class="md:w-1/2">
+<p class="font-headline-sm text-headline-sm text-on-surface">GetX, Bloc, Provider</p>
+<p class="font-body-sm text-body-sm text-tertiary mt-1">Reactive state, dependency injection, and predictable data flow for Flutter apps.</p>
+</div>
+<div class="md:w-1/4 flex md:justify-end gap-2 flex-wrap">
+<span class="px-2.5 py-1 bg-surface-container text-tertiary text-label-md font-label-md uppercase tracking-wider border border-surface-variant">GetX</span>
+<span class="px-2.5 py-1 bg-surface-container text-tertiary text-label-md font-label-md uppercase tracking-wider border border-surface-variant">Bloc</span>
+<span class="px-2.5 py-1 bg-surface-container text-tertiary text-label-md font-label-md uppercase tracking-wider border border-surface-variant">Provider</span>
+</div>
+</div>
+<!-- Row 3: Web & Backend -->
+<div class="group py-6 px-4 -mx-4 transition-colors duration-150 hover:bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="md:w-1/4 flex items-center gap-3">
+<span class="font-index-numeral text-index-numeral text-primary group-hover:translate-x-1 transition-transform">02.3</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold text-on-surface">Web &amp; Backend</span>
+</div>
+<div class="md:w-1/2">
+<p class="font-headline-sm text-headline-sm text-on-surface">MERN Stack, TypeScript, RESTful APIs</p>
+<p class="font-body-sm text-body-sm text-tertiary mt-1">React.js, Express.js, Node.js and MongoDB, wiring frontend to database with tested REST endpoints.</p>
+</div>
+<div class="md:w-1/4 flex md:justify-end gap-2 flex-wrap">
+<span class="px-2.5 py-1 bg-surface-container text-tertiary text-label-md font-label-md uppercase tracking-wider border border-surface-variant">React JS</span>
+<span class="px-2.5 py-1 bg-surface-container text-tertiary text-label-md font-label-md uppercase tracking-wider border border-surface-variant">Node / Express</span>
+<span class="px-2.5 py-1 bg-surface-container text-tertiary text-label-md font-label-md uppercase tracking-wider border border-surface-variant">TypeScript</span>
+</div>
+</div>
+<!-- Row 4: Persistence & Cloud Infrastructure -->
+<div class="group py-6 px-4 -mx-4 transition-colors duration-150 hover:bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="md:w-1/4 flex items-center gap-3">
+<span class="font-index-numeral text-index-numeral text-primary group-hover:translate-x-1 transition-transform">02.4</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold text-on-surface">Data &amp; Persistence</span>
+</div>
+<div class="md:w-1/2">
+<p class="font-headline-sm text-headline-sm text-on-surface">Firebase (Auth, Firestore), MongoDB, AsyncStorage</p>
+<p class="font-body-sm text-body-sm text-tertiary mt-1">Cloud data sync and offline-first device storage for uninterrupted app usage.</p>
+</div>
+<div class="md:w-1/4 flex md:justify-end gap-2 flex-wrap">
+<span class="px-2.5 py-1 bg-surface-container text-tertiary text-label-md font-label-md uppercase tracking-wider border border-surface-variant">Firestore</span>
+<span class="px-2.5 py-1 bg-surface-container text-tertiary text-label-md font-label-md uppercase tracking-wider border border-surface-variant">MongoDB</span>
+<span class="px-2.5 py-1 bg-surface-container text-tertiary text-label-md font-label-md uppercase tracking-wider border border-surface-variant">AsyncStorage</span>
+</div>
+</div>
+<!-- Row 5: Practices & Inspection -->
+<div class="group py-6 px-4 -mx-4 transition-colors duration-150 hover:bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="md:w-1/4 flex items-center gap-3">
+<span class="font-index-numeral text-index-numeral text-primary group-hover:translate-x-1 transition-transform">02.5</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold text-on-surface">Languages &amp; Tools</span>
+</div>
+<div class="md:w-1/2">
+<p class="font-headline-sm text-headline-sm text-on-surface">C++, Java, MySQL, Git, VS Code</p>
+<p class="font-body-sm text-body-sm text-tertiary mt-1">Core programming languages, version control, and GenAI-assisted tooling (Claude, Copilot).</p>
+</div>
+<div class="md:w-1/4 flex md:justify-end gap-2 flex-wrap">
+<span class="px-2.5 py-1 bg-surface-container text-tertiary text-label-md font-label-md uppercase tracking-wider border border-surface-variant">Git VCS</span>
+<span class="px-2.5 py-1 bg-surface-container text-tertiary text-label-md font-label-md uppercase tracking-wider border border-surface-variant">MySQL</span>
+<span class="px-2.5 py-1 bg-surface-container text-tertiary text-label-md font-label-md uppercase tracking-wider border border-surface-variant">C++ / Java</span>
+</div>
+</div>
+</div>
+<!-- Ticker Ribbon / Running Monograph Accent -->
+<div class="mt-14 py-3 px-4 bg-surface-container border-y border-surface-variant overflow-hidden">
+<div class="flex items-center gap-8 whitespace-nowrap text-tertiary font-label-md text-label-md uppercase tracking-widest">
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> React Native</span>
+<span>•</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Flutter &amp; Dart</span>
+<span>•</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> MERN Stack</span>
+<span>•</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Firebase</span>
+<span>•</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> RESTful APIs</span>
+<span>•</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> TypeScript</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 03 — SELECTED WORKS (CASE STUDIES) -->
+<!-- ========================================================================= -->
+<section class="w-full border-t border-surface-variant bg-surface-container-low px-mobile-margin md:px-tablet-margin lg:px-desktop-margin py-20 md:py-28" id="works">
+<div class="max-w-[1360px] mx-auto">
+<!-- Section Index Header -->
+<div class="flex items-baseline justify-between border-b border-surface-variant pb-4 mb-16">
+<div class="flex items-center gap-3">
+<span class="font-index-numeral text-index-numeral text-primary tracking-widest">[ 03 ]</span>
+<h2 class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Selected Works &amp; Engineering Case Studies</h2>
+</div>
+<span class="font-label-md text-label-md text-tertiary tracking-wider uppercase hidden sm:inline">Compiled Folio</span>
+</div>
+<div class="space-y-24">
+<!-- =================================================== -->
+<!-- PROJECT 01: STOCK SENSE -->
+<!-- =================================================== -->
+<article class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start group">
+<!-- Column A: Metadata & Architecture -->
+<div class="lg:col-span-5 space-y-6">
+<div class="flex items-center gap-3 border-b border-surface-variant pb-3">
+<span class="font-index-numeral text-index-numeral text-primary font-bold tracking-widest">PROJECT 01 / 03</span>
+<span class="font-label-md text-label-md text-primary uppercase tracking-wider font-semibold">[ On Progress ]</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight group-hover:text-primary transition-colors">
+                Stock Sense
+              </h3>
+<p class="font-headline-sm text-headline-sm italic font-serif text-tertiary mt-1">
+                Real-Time Stock &amp; News Tracker App
+              </p>
+</div>
+<p class="font-body-md text-body-md text-tertiary leading-relaxed">
+              Building an app with Flutter and Dart that fetches live stock prices and news updates and analyzes market sentiment in real time. Architected a pixel-perfect, responsive UI adapting across mobile and tablet breakpoints using custom layout builders, with animated ticker widgets and live price change indicators built on Flutter's reactive widget tree.
+            </p>
+<!-- Technical Spec Table -->
+<div class="bg-surface border border-surface-variant divide-y divide-surface-variant text-body-sm">
+<div class="p-3.5 flex justify-between">
+<span class="font-label-md uppercase text-tertiary">Framework</span>
+<span class="font-label-md text-on-surface font-medium">Flutter &amp; Dart</span>
+</div>
+<div class="p-3.5 flex justify-between">
+<span class="font-label-md uppercase text-tertiary">Backend</span>
+<span class="font-label-md text-on-surface font-medium">Firebase</span>
+</div>
+<div class="p-3.5 flex justify-between">
+<span class="font-label-md uppercase text-tertiary">Layout</span>
+<span class="font-label-md text-on-surface font-medium">Custom Layout Builders</span>
+</div>
+<div class="p-3.5 flex justify-between">
+<span class="font-label-md uppercase text-tertiary">Status</span>
+<span class="font-label-md text-on-surface font-medium">In Active Development</span>
+</div>
+</div>
+<div class="flex items-center gap-6 pt-2">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md uppercase tracking-wider text-primary font-semibold hover:underline" href="https://github.com/afzal-mohammed-m" rel="noopener noreferrer" target="_blank">
+                Inspect Source Code on GitHub
+                <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</div>
+<!-- Column B: Architectural Viewport Simulation & Custom Graphic -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest border border-surface-variant p-6 md:p-8 space-y-6">
+<!-- Device Viewport Header Mockup -->
+<div class="flex items-center justify-between border-b border-surface-variant pb-4 text-tertiary">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-index-numeral text-index-numeral tracking-widest text-on-surface">SYS.PORTFOLIO // STOCK_SENSE.FLT</span>
+</div>
+<div class="font-label-md text-label-md uppercase">FPS: 60.0 • 12ms Frame Budget</div>
+</div>
+<!-- Inline Architectural Data Visualization: Stock Ticker Sparklines -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Card 1: NIFTY 50 Stream Simulator -->
+<div class="p-4 bg-surface-container-low border border-surface-variant space-y-3">
+<div class="flex justify-between items-baseline">
+<span class="font-label-md text-label-md uppercase text-tertiary tracking-wider">NIFTY 50 INDEX</span>
+<span class="font-label-md text-label-md text-primary font-bold">+1.42%</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface">₹24,852.15</div>
+<!-- Vector Sparkline Render -->
+<div class="w-full h-16 pt-2">
+<svg class="w-full h-full text-primary" fill="none" preserveaspectratio="none" viewbox="0 0 200 60">
+<path d="M0 45 L25 40 L50 48 L75 30 L100 35 L125 18 L150 24 L175 10 L200 8" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
+<path d="M0 45 L25 40 L50 48 L75 30 L100 35 L125 18 L150 24 L175 10 L200 8 L200 60 L0 60 Z" fill="currentColor" fill-opacity="0.06"></path>
+</svg>
+</div>
+<div class="flex justify-between text-body-sm text-tertiary pt-2 border-t border-surface-variant">
+<span>9:15 AM</span>
+<span>15:30 PM IST</span>
+</div>
+</div>
+<!-- Card 2: Sensex Telemetry -->
+<div class="p-4 bg-surface-container-low border border-surface-variant space-y-3">
+<div class="flex justify-between items-baseline">
+<span class="font-label-md text-label-md uppercase text-tertiary tracking-wider">SENSEX BOMBAY</span>
+<span class="font-label-md text-label-md text-primary font-bold">+1.18%</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface">₹81,559.84</div>
+<!-- Vector Sparkline Render -->
+<div class="w-full h-16 pt-2">
+<svg class="w-full h-full text-primary" fill="none" preserveaspectratio="none" viewbox="0 0 200 60">
+<path d="M0 50 L30 42 L60 45 L90 28 L120 32 L150 15 L180 20 L200 12" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
+<path d="M0 50 L30 42 L60 45 L90 28 L120 32 L150 15 L180 20 L200 12 L200 60 L0 60 Z" fill="currentColor" fill-opacity="0.06"></path>
+</svg>
+</div>
+<div class="flex justify-between text-body-sm text-tertiary pt-2 border-t border-surface-variant">
+<span>High: ₹81,720</span>
+<span>Low: ₹80,940</span>
+</div>
+</div>
+</div>
+<!-- Architectural Spec Highlight Notes -->
+<div class="p-4 bg-surface-container border-l-2 border-primary space-y-2">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Engine Optimization Note</span>
+<p class="font-body-sm text-body-sm text-tertiary">
+                  Chart rendering utilizes a custom subclass of <code class="text-on-surface bg-surface-container-highest px-1">CustomPainter</code> with <code class="text-on-surface bg-surface-container-highest px-1">shouldRepaint</code> mathematically constrained to incoming differential ticks, bypassing standard widget tree reconciliation entirely.
+                </p>
+</div>
+</div>
+</div>
+</article>
+<!-- Hairline Project Divider -->
+<div class="w-full border-t border-surface-variant"></div>
+<!-- =================================================== -->
+<!-- PROJECT 02: EMPLOYEE PORTAL & ERP -->
+<!-- =================================================== -->
+<article class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start group">
+<!-- Column A: Metadata & Architecture -->
+<div class="lg:col-span-5 space-y-6">
+<div class="flex items-center gap-3 border-b border-surface-variant pb-3">
+<span class="font-index-numeral text-index-numeral text-primary font-bold tracking-widest">PROJECT 02 / 03</span>
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-wider">Enterprise ERP</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight group-hover:text-primary transition-colors">
+                TexaWave ERP
+              </h3>
+<p class="font-headline-sm text-headline-sm italic font-serif text-tertiary mt-1">
+                HR Portal &amp; Employee Portal for a Multi-Module ERP
+              </p>
+</div>
+<p class="font-body-md text-body-md text-tertiary leading-relaxed">
+              Developed and enhanced the TexaWave ERP, building out the complete HR Portal and Employee Portal — attendance tracking, regularization, payroll, loan management, leave management, payslip generation, and employee directory management — as part of the internship at Texawave Innovations.
+            </p>
+<!-- Technical Spec Table -->
+<div class="bg-surface border border-surface-variant divide-y divide-surface-variant text-body-sm">
+<div class="p-3.5 flex justify-between">
+<span class="font-label-md uppercase text-tertiary">Stack</span>
+<span class="font-label-md text-on-surface font-medium">MongoDB, Express, React, Node</span>
+</div>
+<div class="p-3.5 flex justify-between">
+<span class="font-label-md uppercase text-tertiary">Access Control</span>
+<span class="font-label-md text-on-surface font-medium">Org Chart-Based Role Permissions</span>
+</div>
+<div class="p-3.5 flex justify-between">
+<span class="font-label-md uppercase text-tertiary">Feature</span>
+<span class="font-label-md text-on-surface font-medium">Offer Letter Generation via Outlook</span>
+</div>
+<div class="p-3.5 flex justify-between">
+<span class="font-label-md uppercase text-tertiary">Focus</span>
+<span class="font-label-md text-on-surface font-medium">Bug Fixes, Refactors, Reusability</span>
+</div>
+</div>
+<div class="flex items-center gap-6 pt-2">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md uppercase tracking-wider text-primary font-semibold hover:underline" href="https://github.com/afzal-mohammed-m" rel="noopener noreferrer" target="_blank">
+                Inspect Repository
+                <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</div>
+<!-- Column B: Architectural Diagram Mockup -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest border border-surface-variant p-6 md:p-8 space-y-6">
+<!-- Console Top Bar -->
+<div class="flex items-center justify-between border-b border-surface-variant pb-4 text-tertiary">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-index-numeral text-index-numeral tracking-widest text-on-surface">SYS.ERP // EMPLOYEE_PORTAL</span>
+</div>
+<span class="font-label-md text-label-md uppercase text-primary font-semibold">MODULES: 6 ACTIVE</span>
+</div>
+<!-- Module Overview Frame -->
+<div class="bg-surface-container-low border border-surface-variant p-6 relative overflow-hidden">
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-surface-variant pb-4">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">Portal Scope</span>
+<p class="font-headline-sm text-headline-sm text-on-surface">HR &amp; Employee Portal</p>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">Company</span>
+<p class="font-index-numeral text-index-numeral text-on-surface font-mono">Texawave Innovations</p>
+</div>
+</div>
+<!-- Module Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 py-6">
+<div class="p-3 bg-surface border border-surface-variant text-center">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Attendance</span>
+</div>
+<div class="p-3 bg-surface border border-surface-variant text-center">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Regularization</span>
+</div>
+<div class="p-3 bg-surface border border-surface-variant text-center">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Payroll</span>
+</div>
+<div class="p-3 bg-surface border border-surface-variant text-center">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Loan Mgmt</span>
+</div>
+<div class="p-3 bg-surface border border-surface-variant text-center">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Leave Mgmt</span>
+</div>
+<div class="p-3 bg-surface border border-surface-variant text-center">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Payslips</span>
+</div>
+</div>
+</div>
+<!-- Architecture Takeaway -->
+<p class="font-body-sm text-body-sm text-tertiary">
+                Engineered a generalized regularization solution handling edge cases across most test scenarios, implemented an organizational chart for role-based access control, and built an animated login UI with a color theme aligned to company branding.
+              </p>
+</div>
+</div>
+</article>
+<!-- Hairline Project Divider -->
+<div class="w-full border-t border-surface-variant"></div>
+<!-- =================================================== -->
+<!-- PROJECT 03: PROJECT ALPHA [RESERVED IN R&D] -->
+<!-- =================================================== -->
+<article class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start group">
+<!-- Column A: Metadata & Architecture -->
+<div class="lg:col-span-5 space-y-6">
+<div class="flex items-center gap-3 border-b border-surface-variant pb-3">
+<span class="font-index-numeral text-index-numeral text-primary font-bold tracking-widest">PROJECT 03 / 03</span>
+<span class="font-label-md text-label-md text-primary uppercase tracking-wider font-semibold">[ Deployed on Play Store ]</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight group-hover:text-primary transition-colors">
+                GymCom-App
+              </h3>
+<p class="font-headline-sm text-headline-sm italic font-serif text-tertiary mt-1">
+                Fitness &amp; Utility Tracking App, React Native
+              </p>
+</div>
+<p class="font-body-md text-body-md text-tertiary leading-relaxed">
+              A React Native fitness and utility tracking app for Android, enabling users to monitor calories, protein intake, and body fat percentage, with workout split planning and an interactive progress tracker. Built and deployed solo, end-to-end, from initial design to Play Console launch.
+            </p>
+<!-- Technical Spec Table -->
+<div class="bg-surface border border-surface-variant divide-y divide-surface-variant text-body-sm">
+<div class="p-3.5 flex justify-between">
+<span class="font-label-md uppercase text-tertiary">Framework</span>
+<span class="font-label-md text-on-surface font-medium">React Native</span>
+</div>
+<div class="p-3.5 flex justify-between">
+<span class="font-label-md uppercase text-tertiary">Storage</span>
+<span class="font-label-md text-on-surface font-medium">AsyncStorage (Offline-First)</span>
+</div>
+<div class="p-3.5 flex justify-between">
+<span class="font-label-md uppercase text-tertiary">Theming</span>
+<span class="font-label-md text-on-surface font-medium">Light / Dark Mode</span>
+</div>
+<div class="p-3.5 flex justify-between">
+<span class="font-label-md uppercase text-tertiary">Release</span>
+<span class="font-label-md text-on-surface font-medium">Live on Google Play Store</span>
+</div>
+</div>
+<div class="flex items-center gap-6 pt-2">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md uppercase tracking-wider text-primary font-semibold hover:underline" href="https://github.com/afzal-mohammed-m" rel="noopener noreferrer" target="_blank">
+                Inspect Source Code on GitHub
+                <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</div>
+<!-- Column B: App Preview Mockup -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest border border-surface-variant p-6 md:p-8 space-y-6">
+<div class="flex items-center justify-between border-b border-surface-variant pb-4 text-tertiary">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-index-numeral text-index-numeral tracking-widest text-on-surface">SYS.MOBILE // GYMCOM.APK</span>
+</div>
+<span class="font-label-md text-label-md uppercase text-primary font-semibold">STATUS: LIVE</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="p-4 bg-surface-container-low border border-surface-variant space-y-2 text-center">
+<span class="font-label-md text-label-md uppercase text-tertiary tracking-wider">Calories</span>
+<p class="font-headline-md text-headline-md text-on-surface">2,140</p>
+<p class="font-body-sm text-body-sm text-tertiary">kcal tracked</p>
+</div>
+<div class="p-4 bg-surface-container-low border border-surface-variant space-y-2 text-center">
+<span class="font-label-md text-label-md uppercase text-tertiary tracking-wider">Protein</span>
+<p class="font-headline-md text-headline-md text-on-surface">128g</p>
+<p class="font-body-sm text-body-sm text-tertiary">daily intake</p>
+</div>
+<div class="p-4 bg-surface-container-low border border-surface-variant space-y-2 text-center">
+<span class="font-label-md text-label-md uppercase text-tertiary tracking-wider">Body Fat</span>
+<p class="font-headline-md text-headline-md text-on-surface">15.2%</p>
+<p class="font-body-sm text-body-sm text-tertiary">progress tracker</p>
+</div>
+</div>
+<div class="p-4 bg-surface-container border-l-2 border-primary space-y-2">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Build Note</span>
+<p class="font-body-sm text-body-sm text-tertiary">
+                  Designed with a clean, minimal color theme and full light/dark mode support, with all fitness data persisted locally via <code class="text-on-surface bg-surface-container-highest px-1">AsyncStorage</code> for offline access.
+                </p>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 04 — DISPATCH / INQUIRIES (CONTACT) -->
+<!-- ========================================================================= -->
+<section class="w-full border-t border-surface-variant bg-surface px-mobile-margin md:px-tablet-margin lg:px-desktop-margin py-20 md:py-32" id="contact">
+<div class="max-w-[1360px] mx-auto">
+<!-- Section Index Header -->
+<div class="flex items-baseline justify-between border-b border-surface-variant pb-4 mb-16">
+<div class="flex items-center gap-3">
+<span class="font-index-numeral text-index-numeral text-primary tracking-widest">[ 04 ]</span>
+<h2 class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Collaboration &amp; Inquiries</h2>
+</div>
+<span class="font-label-md text-label-md text-tertiary tracking-wider uppercase hidden sm:inline">Direct Channel</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Statement Lockup -->
+<div class="lg:col-span-6 space-y-6">
+<h3 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface tracking-tight leading-[1.1]">
+            Let us engineer something of permanent value.
+          </h3>
+<p class="font-body-lg text-body-lg text-tertiary leading-relaxed max-w-lg">
+            Whether you have an opening for an ambitious junior mobile engineer, an architectural challenge in Flutter, or need a dedicated developer for cross-platform products—I am ready to contribute immediately.
+          </p>
+<div class="pt-6 border-t border-surface-variant">
+<p class="font-label-md text-label-md uppercase tracking-wider text-tertiary mb-2">Relocation &amp; Availability</p>
+<p class="font-body-md text-body-md text-on-surface">
+              Primarily based in <strong class="text-on-surface font-semibold">Medavakkam, Chennai</strong>. Open to on-site roles across Bengaluru, Hyderabad, or high-caliber remote teams globally.
+            </p>
+</div>
+</div>
+<!-- Interactive Directory Column -->
+<div class="lg:col-span-6 space-y-2">
+<!-- Contact Row 1: Direct Email -->
+<a class="group p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors block border border-surface-variant" href="mailto:mohammedafzalm05@gmail.com">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">01 / Direct Electronic Mail</span>
+<span class="material-symbols-outlined text-tertiary group-hover:text-primary transition-colors text-[20px]">arrow_forward</span>
+</div>
+<p class="mt-2 font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              mohammedafzalm05@gmail.com
+            </p>
+<p class="mt-1 font-body-sm text-body-sm text-tertiary">Guaranteed response within 24 operational hours.</p>
+</a>
+<!-- Contact Row: Phone -->
+<a class="group p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors block border border-surface-variant" href="tel:+916379413201">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">Phone</span>
+<span class="material-symbols-outlined text-tertiary group-hover:text-primary transition-colors text-[20px]">arrow_forward</span>
+</div>
+<p class="mt-2 font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              +91 6379413201
+            </p>
+<p class="mt-1 font-body-sm text-body-sm text-tertiary">Available for calls, Chennai, IST.</p>
+</a>
+<!-- Contact Row 2: LinkedIn -->
+<a class="group p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors block border border-surface-variant" href="https://linkedin.com/in/mohammed-afzal-m" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">03 / Professional Network</span>
+<span class="material-symbols-outlined text-tertiary group-hover:text-primary transition-colors text-[20px]">arrow_outward</span>
+</div>
+<p class="mt-2 font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              linkedin.com/in/mohammed-afzal-m
+            </p>
+<p class="mt-1 font-body-sm text-body-sm text-tertiary">Recommendations, credentials, and career trajectory.</p>
+</a>
+<!-- Contact Row 3: GitHub -->
+<a class="group p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors block border border-surface-variant" href="https://github.com/afzal-mohammed-m" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">04 / Code Repository</span>
+<span class="material-symbols-outlined text-tertiary group-hover:text-primary transition-colors text-[20px]">arrow_outward</span>
+</div>
+<p class="mt-2 font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              github.com/afzal-mohammed-m
+            </p>
+<p class="mt-1 font-body-sm text-body-sm text-tertiary">Commit history, experiment sandboxes, and repository branches.</p>
+</a>
+<!-- Contact Row 4: Curriculum Vitae -->
+<a class="group p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors block border border-surface-variant" href="#contact">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">05 / Official Document</span>
+<span class="material-symbols-outlined text-tertiary group-hover:text-primary transition-colors text-[20px]">download</span>
+</div>
+<p class="mt-2 font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Curriculum Vitae (PDF Document)
+            </p>
+<p class="mt-1 font-body-sm text-body-sm text-tertiary">Comprehensive one-page technical breakdown for hiring managers.</p>
+</a>
+</div>
+</div>
+<!-- Colophon & Gazette Timestamp Note -->
+<div class="mt-24 pt-8 border-t border-surface-variant grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline text-tertiary font-body-sm text-body-sm">
+<div class="md:col-span-4">
+<p class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Colophon &amp; Spec</p>
+<p class="mt-1">Typeset in Newsreader and Space Grotesk. Built strictly with semantic HTML and utility tokens.</p>
+</div>
+<div class="md:col-span-4">
+<p class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Coordinates</p>
+<p class="mt-1">Medavakkam, Chennai, Tamil Nadu, India</p>
+</div>
+<div class="md:col-span-4 md:text-right font-index-numeral text-index-numeral text-outline">
+          LAST_BUILD_HASH // 2026.09.AFZAL.PORTFOLIO
+        </div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Subtle interactive enhancement for scroll and click handling
+  document.addEventListener('DOMContentLoaded', () => {
+    // Smooth navigation anchor click handler
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId && targetId !== '#') {
+          const targetElem = document.querySelector(targetId);
+          if (targetElem) {
+            e.preventDefault();
+            targetElem.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        }
+      });
+    });
+  });
+</script></main><aside class="fixed bottom-space-lg right-mobile-margin md:right-tablet-margin lg:right-desktop-margin z-40 hidden sm:block"><a class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-lowest border border-outline-variant text-on-surface hover:border-primary-container hover:text-primary transition-colors font-label-md text-label-md tracking-wider uppercase" data-path="portfolio" href="#contact">Get in touch <span class="text-primary font-headline-sm">→</span></a></aside><footer class="w-full bg-surface-container-low"><div class="max-w-[1360px] mx-auto px-mobile-margin md:px-tablet-margin lg:px-desktop-margin py-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md font-body-sm text-body-sm text-tertiary"><div><p class="font-headline-sm text-headline-sm text-on-surface">Mohammed Afzal</p><p class="mt-space-2xs text-on-surface-variant">Full-Stack &amp; Mobile App Developer — Medavakkam, Chennai, TN</p></div><div class="flex items-center gap-space-lg font-label-md text-label-md uppercase tracking-wider"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="portfolio" href="#works">Archive</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="portfolio" href="#contact">Inquiries</a><span class="text-outline">© 2026</span></div></div></footer></body></html>
